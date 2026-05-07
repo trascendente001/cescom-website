@@ -42,3 +42,30 @@
 
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 @media (max-width: 768px) { .form-row { grid-template-columns: 1fr; gap: 16px; } }
+
+/* Form feedback states */
+.form-feedback {
+  display: none;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.form-feedback--success {
+  background: #ecfdf5;
+  border: 1px solid #6ee7b7;
+  color: #065f46;
+}
+.form-feedback--error {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #991b1b;
+}
+.form-feedback[aria-hidden="false"] { display: block; }
+
+.contact-form__actions .btn[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
