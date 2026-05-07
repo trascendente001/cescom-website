@@ -100,5 +100,6 @@ try {
     echo json_encode(['ok' => true]);
 
 } catch (Exception $e) {
-    echo json_encode(['ok' => false, 'error' => 'Error al enviar. Intente nuevamente o contáctenos por WhatsApp.']);
+    // DEBUG TEMPORAL — remover después de diagnosticar
+    echo json_encode(['ok' => false, 'error' => $e->getMessage()]);
 }
