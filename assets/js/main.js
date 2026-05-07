@@ -3,28 +3,42 @@
   var btn = document.querySelector('.navbar__toggle');
   if (!navbar || !btn) return;
 
-  btn.addEventListener('click', function () {
-    var open = navbar.getAttribute('data-open') === 'true';
-    navbar.setAttribute('data-open', String(!open));
-    btn.setAttribute('aria-expanded', String(!open));
-    btn.setAttribute('aria-label', open ? 'Abrir menú' : 'Cerrar menú');
-  });
+  var backdrop = null;
 
-  // Cerrar menú al hacer click en un enlace
-  navbar.querySelectorAll('.navbar__link, .navbar__cta').forEach(function (link) {
-    link.addEventListener('click', function () {
-      navbar.setAttribute('data-open', 'false');
-      btn.setAttribute('aria-expanded', 'false');
-      btn.setAttribute('aria-label', 'Abrir menú');
-    });
-  });
+  function openMenu() {
+    navbar.setAttribute('data-open', 'true');
+    btn.setAttribute('aria-expanded', 'true');
+    btn.setAttribute('aria-label', 'Cerrar menú');
+    document.body.style.overflow = 'hidden';
 
-  // Cerrar menú al hacer click fuera del navbar
-  document.addEventListener('click', function (e) {
-    if (!navbar.contains(e.target)) {
-      navbar.setAttribute('data-open', 'false');
-      btn.setAttribute('aria-expanded', 'false');
-      btn.setAttribute('aria-label', 'Abrir menú');
+    backdrop = document.createElement('div');
+    backdrop.className = 'navbar-backdrop';
+    backdrop.addEventListener('click', closeMenu);
+    document.body.appendChild(backdrop);
+  }
+
+  function closeMenu() {
+    navbar.setAttribute('data-open', 'false');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Abrir menú');
+    document.body.style.overflow = '';
+
+    if (backdrop) {
+      backdrop.removeEventListener('click', closeMenu);
+      backdrop.parentNode && backdrop.parentNode.removeChild(backdrop);
+      backdrop = null;
     }
+  }
+
+  btn.addEventListener('click', function () {
+    navbar.getAttribute('data-open') === 'true' ? closeMenu() : openMenu();
+  });
+
+  navbar.querySelectorAll('.navbar__link, .navbar__cta').forEach(function (link) {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && navbar.getAttribute('data-open') === 'true') closeMenu();
   });
 })();
