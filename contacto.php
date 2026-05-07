@@ -23,17 +23,18 @@ if (!empty($_POST['website'])) {
 }
 
 // Sanitize and validate
-$nombre  = trim(htmlspecialchars($_POST['nombre']  ?? '', ENT_QUOTES, 'UTF-8'));
-$email   = filter_var(trim($_POST['email']   ?? ''), FILTER_SANITIZE_EMAIL);
-$tel     = trim(htmlspecialchars($_POST['telefono'] ?? '', ENT_QUOTES, 'UTF-8'));
-$servicio = trim(htmlspecialchars($_POST['servicio'] ?? '', ENT_QUOTES, 'UTF-8'));
-$mensaje = trim(htmlspecialchars($_POST['mensaje']  ?? '', ENT_QUOTES, 'UTF-8'));
+$nombre   = str_replace(["\r", "\n"], ' ', trim(htmlspecialchars($_POST['nombre']   ?? '', ENT_QUOTES, 'UTF-8')));
+$emailRaw = trim($_POST['email'] ?? '');
+$email    = filter_var($emailRaw, FILTER_VALIDATE_EMAIL);
+$tel      = trim(htmlspecialchars($_POST['telefono'] ?? '', ENT_QUOTES, 'UTF-8'));
+$servicio = str_replace(["\r", "\n"], ' ', trim(htmlspecialchars($_POST['servicio'] ?? '', ENT_QUOTES, 'UTF-8')));
+$mensaje  = trim(htmlspecialchars($_POST['mensaje']  ?? '', ENT_QUOTES, 'UTF-8'));
 
 if (empty($nombre)) {
     echo json_encode(['ok' => false, 'error' => 'El nombre es requerido.']);
     exit;
 }
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+if (!$email) {
     echo json_encode(['ok' => false, 'error' => 'El correo electrónico no es válido.']);
     exit;
 }

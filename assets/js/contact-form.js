@@ -45,11 +45,14 @@
     }
     errorEl.setAttribute('aria-hidden', 'true');
 
-    fetch('contacto.php', {
+    fetch('/contacto.php', {
       method: 'POST',
       body: new FormData(form)
     })
-      .then(function (res) { return res.json(); })
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
       .then(function (data) {
         if (data.ok) {
           showSuccess();
