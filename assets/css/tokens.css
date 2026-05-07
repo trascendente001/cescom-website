@@ -1,0 +1,52 @@
+:root {
+  /* Surfaces */
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --color-bg-muted: #f3f4f5;
+  --color-surface-dark: #111827;
+  --color-surface-deep: #0f172a;
+  --color-surface-ink: #001e31;
+  --color-surface-card-dark: #2e3132;
+
+  /* Text */
+  --color-text-primary: #191c1d;
+  --color-text-body: #40484f;
+  --color-text-mute: #94a3b8;
+  --color-text-soft: #c8c6c6;
+  --color-text-faint: #edeeef;
+
+  /* Borders */
+  --color-border: #e1e3e4;
+  --color-border-soft: #edeeef;
+  --color-border-input: #c0c7d0;
+  --color-border-footer: #1e293b;
+  --color-border-nav: #f1f5f9;
+
+  /* Brand */
+  --color-brand: #3786bc;
+  --color-brand-deep: #006192;
+  --color-brand-darker: #004b72;
+  --color-brand-tint: #cce5ff;
+  --color-brand-tint-soft: #0061921a;
+
+  /* Typography */
+  --font-display: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+  /* Layout */
+  --container-max: 1200px;
+  --page-pad-x: 120px;
+  --page-pad-y: 80px;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 17.5px rgba(0, 0, 0, 0.04);
+  --shadow-elev: 0 4px 5.25px rgba(0, 0, 0, 0.10), 0 10px 13.125px rgba(0, 0, 0, 0.10);
+  --shadow-btn: 0 2px 3.5px rgba(0, 0, 0, 0.10), 0 4px 5.25px rgba(0, 0, 0, 0.10);
+  --shadow-nav: 0 1px 1.75px rgba(0, 0, 0, 0.05);
+}

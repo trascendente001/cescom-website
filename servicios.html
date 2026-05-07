@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Servicios | CESCOM</title>
+  <meta name="description" content="Servicios integrales de ingeniería y construcción de CESCOM: arquitectura, infraestructura minera y soluciones tecnológicas avanzadas.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components/navbar.css">
+  <link rel="stylesheet" href="assets/css/components/footer.css">
+  <link rel="stylesheet" href="assets/css/components/button.css">
+  <link rel="stylesheet" href="assets/css/components/card.css">
+  <link rel="stylesheet" href="assets/css/components/form.css">
+  <link rel="stylesheet" href="assets/css/pages/servicios.css">
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <header class="navbar" data-active="servicios">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand" aria-label="CESCOM - Inicio">
+        <img src="assets/images/image-import-100.png" alt="CESCOM" class="navbar__logo" width="152" height="51">
+      </a>
+
+      <button class="navbar__toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="navbar__nav" aria-label="Principal">
+        <a href="index.html" class="navbar__link" data-nav="home">Inicio</a>
+        <a href="nosotros.html" class="navbar__link" data-nav="nosotros">Nosotros</a>
+        <a href="#proyectos" class="navbar__link" data-nav="proyectos">Proyectos</a>
+        <a href="servicios.html" class="navbar__link" data-nav="servicios" aria-current="page">Servicios</a>
+      </nav>
+
+      <a href="contacto.html" class="btn btn--primary btn--cta-nav navbar__cta">Cotizar Ahora</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ====== 1. HERO ====== -->
+    <section class="svc-hero" aria-labelledby="svc-hero-title">
+      <div class="svc-hero__bg" aria-hidden="true"></div>
+      <div class="svc-hero__overlay" aria-hidden="true"></div>
+      <div class="svc-hero__inner">
+        <span class="svc-hero__badge">Servicios Industriales</span>
+        <h1 class="svc-hero__title" id="svc-hero-title">Servicios Integrales de Ingeniería y Construcción</h1>
+        <p class="svc-hero__lead">Ofreciendo soluciones de ingeniería de precisión en arquitectura, infraestructura minera especializada e integraciones tecnológicas avanzadas.</p>
+        <a href="#categoria-1" class="svc-hero__cta">Explorar Capacidades</a>
+      </div>
+    </section>
+
+    <!-- ====== 2. CATEGORÍA 1 — Construcción y Arquitectura ====== -->
+    <section class="section svc-cat" id="categoria-1" aria-labelledby="cat1-title">
+      <div class="svc-cat__inner">
+        <div class="svc-cat__head">
+          <span class="svc-cat__eyebrow">Categoría 01</span>
+          <h2 class="svc-cat__title" id="cat1-title">Construcción y Arquitectura</h2>
+          <p class="svc-cat__intro">Nuestros servicios fundamentales combinan la integridad estructural con un diseño sofisticado, garantizando el cumplimiento de los más altos estándares nacionales, incluidos SEREMI y SEC.</p>
+        </div>
+
+        <div class="svc-grid">
+          <!-- Card 1: Habilitación de Oficinas -->
+          <article class="svc-card">
+            <span class="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </span>
+            <h3 class="svc-card__title">Habilitación de Oficinas</h3>
+            <p class="svc-card__desc">Transformaciones integrales de interiores corporativos. Diseñamos y construimos entornos profesionales optimizados para la eficiencia del flujo de trabajo y la representación de la marca.</p>
+          </article>
+
+          <!-- Card 2: Centros Médicos (SEREMI) -->
+          <article class="svc-card">
+            <span class="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+            </span>
+            <h3 class="svc-card__title">Centros Médicos (SEREMI)</h3>
+            <p class="svc-card__desc">Estricto cumplimiento de la normativa sanitaria y estructural. Nos especializamos en clínicas y centros de salud con garantía de aprobación de las inspecciones SEREMI.</p>
+          </article>
+
+          <!-- Card 3: Diseño Estructural 3D -->
+          <article class="svc-card">
+            <span class="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg>
+            </span>
+            <h3 class="svc-card__title">Diseño Estructural 3D</h3>
+            <p class="svc-card__desc">Modelado y renderizado espacial avanzado. Visualice su proyecto industrial o comercial con precisión milimétrica antes de que comiencen las obras civiles.</p>
+          </article>
+
+          <!-- Card 4: Obras Civiles -->
+          <article class="svc-card">
+            <span class="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22l3-9 7-3 7 3 3 9"/><path d="M9 22V13"/><path d="M15 22V13"/></svg>
+            </span>
+            <h3 class="svc-card__title">Obras Civiles</h3>
+            <p class="svc-card__desc">Construcción pesada, cimentaciones y modificaciones estructurales. Ejecutado con rigurosos protocolos de seguridad y materiales de grado industrial.</p>
+          </article>
+
+          <!-- Card 5: Sistemas Eléctricos (SEC) -->
+          <article class="svc-card">
+            <span class="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+            </span>
+            <h3 class="svc-card__title">Sistemas Eléctricos (SEC)</h3>
+            <p class="svc-card__desc">Instalaciones integrales de alta y baja tensión. Cumplimiento total de la certificación SEC para complejos industriales y centros comerciales.</p>
+          </article>
+
+          <!-- Card 6: Fabricación en aluminio y termopanel -->
+          <article class="svc-card">
+            <span class="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 12h18M12 3v18"/></svg>
+            </span>
+            <h3 class="svc-card__title">Fabricación en aluminio y termopanel</h3>
+            <p class="svc-card__desc">Soluciones eficientes y duraderas en estructuras livianas, ventanería, cerramientos y termopaneles para proyectos residenciales, comerciales e industriales.</p>
+          </article>
+
+          <!-- Card 7: Trabajos de pintura interior y exterior -->
+          <article class="svc-card">
+            <span class="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 11h-1V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h7v3a4 4 0 1 0 4 0v-3h3a2 2 0 0 0 0-4z"/></svg>
+            </span>
+            <h3 class="svc-card__title">Trabajos de pintura interior y exterior</h3>
+            <p class="svc-card__desc">Acabados profesionales con materiales de alta calidad para muros, cielos, fachadas y todo tipo de superficies interiores y exteriores.</p>
+          </article>
+
+          <!-- Card 8: Trámites municipales -->
+          <article class="svc-card">
+            <span class="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+            </span>
+            <h3 class="svc-card__title">Trámites municipales</h3>
+            <p class="svc-card__desc">Gestión y apoyo en permisos, documentación y procesos municipales necesarios para obras, regularizaciones y proyectos de construcción.</p>
+          </article>
+
+          <!-- Card 9: Ley 20.898 Regularizaciones -->
+          <article class="svc-card">
+            <span class="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7l7-4 7 4M3 11l4 8h-8zM17 11l4 8h-8z"/></svg>
+            </span>
+            <h3 class="svc-card__title">Ley 20.898 Regularizaciones</h3>
+            <p class="svc-card__desc">Asesoría y gestión para regularización de viviendas y construcciones bajo la Ley 20.898, incluyendo revisión técnica y documentación requerida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== 3. MID BANNER — Encofrados ====== -->
+    <section class="svc-banner" aria-labelledby="svc-banner-title">
+      <div class="svc-banner__bg" aria-hidden="true"></div>
+      <div class="svc-banner__overlay" aria-hidden="true"></div>
+      <div class="svc-banner__inner">
+        <div class="svc-banner__media">
+          <img src="assets/images/image-import-110.png" alt="Ejecución de encofrados y moldajes en obra civil">
+        </div>
+        <div class="svc-banner__content">
+          <span class="svc-banner__badge">Especialidad CESCOM</span>
+          <h2 class="svc-banner__title" id="svc-banner-title">Ejecución de Encofrados y Moldajes para Obras Civiles</h2>
+          <p class="svc-banner__lead">En CESCOM ejecutamos proyectos de encofrado para fundaciones, muros, parapetos, vigas y losas, utilizando sistemas de moldaje eficientes y adaptables a cada obra. Contamos con mano de obra especializada para el montaje, alineación y preparación de paneles, asegurando rapidez, precisión y seguridad en terreno. Nuestro enfoque permite optimizar los tiempos de ejecución y lograr estructuras de hormigón con terminaciones firmes, niveladas y de alto estándar. Ideal para proyectos residenciales, comerciales, industriales y de ingeniería civil.</p>
+
+          <div class="svc-banner__bullets">
+            <div class="svc-bullet">
+              <span class="svc-bullet__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+              </span>
+              <span class="svc-bullet__title">Mayor eficiencia en obra</span>
+              <span class="svc-bullet__desc">Cuadrillas preparadas para avanzar con orden, rapidez y control técnico.</span>
+            </div>
+            <div class="svc-bullet">
+              <span class="svc-bullet__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>
+              </span>
+              <span class="svc-bullet__title">Adaptabilidad</span>
+              <span class="svc-bullet__desc">Nos ajustamos a distintos tipos de moldaje y especificaciones estructurales.</span>
+            </div>
+            <div class="svc-bullet">
+              <span class="svc-bullet__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <span class="svc-bullet__title">Cumplimiento</span>
+              <span class="svc-bullet__desc">Trabajamos bajo procedimientos seguros y coordinación permanente con la planificación.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== 4. CATEGORÍA 2 — Servicios Industriales Especializados ====== -->
+    <section class="section svc-cat" id="categoria-2" aria-labelledby="cat2-title">
+      <div class="svc-cat__inner">
+        <div class="svc-cat__head">
+          <span class="svc-cat__eyebrow">Categoría 02</span>
+          <h2 class="svc-cat__title" id="cat2-title">Servicios Industriales Especializados</h2>
+          <p class="svc-cat__intro">Despliegue de infraestructura técnica avanzada diseñada para entornos extremos y requisitos de alta seguridad.</p>
+        </div>
+
+        <div class="svc-grid">
+          <!-- Card 1: Módulos Mineros -->
+          <article class="svc-card">
+            <span class="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M3 10h18M8 7V4h8v3"/></svg>
+            </span>
+            <h3 class="svc-card__title">Módulos Mineros</h3>
+            <p class="svc-card__desc">Fabricación a medida de unidades modulares resistentes y climatizadas, diseñadas específicamente para las rigurosas exigencias del sector minero chileno.</p>
+            <span class="svc-card__tag">Reforzado</span>
+          </article>
+
+          <!-- Card 2: Redes de Fibra Óptica -->
+          <article class="svc-card">
+            <span class="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M2 12h4M18 12h4M12 2v4M12 18v4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/></svg>
+            </span>
+            <h3 class="svc-card__title">Redes de Fibra Óptica</h3>
+            <p class="svc-card__desc">Instalaciones de red troncal de datos de alta capacidad. Diseñamos, empalmamos y certificamos redes de fibra óptica de grado industrial para una conectividad perfecta en el campus.</p>
+            <span class="svc-card__tag">Troncal de Alta Velocidad</span>
+          </article>
+
+          <!-- Card 3: Sistemas de Seguridad -->
+          <article class="svc-card">
+            <span class="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </span>
+            <h3 class="svc-card__title">Sistemas de Seguridad</h3>
+            <p class="svc-card__desc">Sistemas integrados de control de acceso, CCTV y defensa perimetral adaptados a sedes corporativas y emplazamientos industriales sensibles.</p>
+            <span class="svc-card__tag">Defensa Integrada</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== 5. FINAL CTA ====== -->
+    <section class="section svc-final" aria-labelledby="svc-final-title">
+      <div class="svc-final__inner">
+        <h2 class="svc-final__title" id="svc-final-title">¿Listo para elevar su infraestructura?</h2>
+        <p class="svc-final__lead">Póngase en contacto con nuestro equipo de ingeniería para analizar las especificaciones, los requisitos normativos y los presupuestos detallados de su próximo proyecto.</p>
+        <a href="contacto.html" class="btn btn--accent svc-final__cta">Solicitar una Consulta</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p class="footer__title">CESCOM<br>Diseño y Construcción</p>
+        <p class="footer__copy">© 2024 Cescom Spa. Excelencia Técnica en Ingeniería.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Enlaces legales">
+        <a href="#" class="footer__link">Política de Privacidad</a>
+        <a href="#" class="footer__link">Términos de Servicio</a>
+        <a href="#" class="footer__link">Política de Cookies</a>
+        <a href="servicios.html" class="footer__link">Servicios</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <a href="#" class="footer__social" aria-label="Facebook">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.5 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
+      </a>
+      <a href="#" class="footer__social" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor"></circle></svg>
+      </a>
+      <a href="#" class="footer__social" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.3 18.3H5.7V9.7h2.6v8.6Zm-1.3-9.8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm11.3 9.8h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3H10V9.7h2.5v1.2c.4-.7 1.3-1.4 2.6-1.4 2.7 0 3.2 1.8 3.2 4.1v4.7Z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>

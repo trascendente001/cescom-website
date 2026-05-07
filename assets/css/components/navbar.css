@@ -1,0 +1,86 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-bottom: 1px solid var(--color-border-nav);
+  box-shadow: var(--shadow-nav);
+}
+.navbar--solid { background: #ffffff; backdrop-filter: none; }
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 16px var(--page-pad-x);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navbar__brand {
+  display: inline-flex;
+  align-items: center;
+}
+.navbar__logo { height: 51px; width: auto; }
+
+.navbar__nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.navbar__link {
+  position: relative;
+  font-size: 16px;
+  color: var(--color-text-body);
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: color .2s ease, background-color .2s ease;
+}
+.navbar__link:hover { color: var(--color-brand); background: var(--color-bg-alt); }
+.navbar__link[aria-current="page"] {
+  color: var(--color-brand);
+  background: transparent;
+  padding: 0 0 4px;
+  border-radius: 0;
+  border-bottom: 2px solid var(--color-brand);
+}
+
+.navbar__toggle {
+  display: none;
+  width: 44px; height: 44px;
+  align-items: center; justify-content: center;
+  border-radius: 8px;
+  color: var(--color-text-primary);
+}
+.navbar__toggle:hover { background: var(--color-bg-alt); }
+
+@media (max-width: 1024px) {
+  .navbar__inner { padding: 12px var(--page-pad-x); gap: 16px; }
+  .navbar__nav { gap: 20px; }
+}
+
+@media (max-width: 768px) {
+  .navbar__toggle { display: inline-flex; }
+  .navbar__nav,
+  .navbar__cta { display: none; }
+  .navbar[data-open="true"] .navbar__nav,
+  .navbar[data-open="true"] .navbar__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 8px;
+    padding: 12px 0 0;
+  }
+  .navbar[data-open="true"] .navbar__inner {
+    flex-wrap: wrap;
+  }
+  .navbar[data-open="true"] .navbar__link {
+    padding: 12px 8px;
+  }
+  .navbar[data-open="true"] .navbar__cta { padding-bottom: 8px; }
+}

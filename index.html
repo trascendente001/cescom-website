@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CESCOM | Soluciones Integrales en Diseño y Construcción</title>
+  <meta name="description" content="CESCOM ejecuta proyectos de ingeniería y construcción con precisión industrial. Especialistas en habilitación de espacios y mantención integral.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components/navbar.css">
+  <link rel="stylesheet" href="assets/css/components/button.css">
+  <link rel="stylesheet" href="assets/css/components/card.css">
+  <link rel="stylesheet" href="assets/css/components/form.css">
+  <link rel="stylesheet" href="assets/css/components/footer.css">
+  <link rel="stylesheet" href="assets/css/pages/home.css">
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<header class="navbar" data-active="home">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__brand" aria-label="CESCOM - Inicio">
+      <img src="assets/images/image-import-100.png" alt="CESCOM" class="navbar__logo" width="152" height="51">
+    </a>
+
+    <button class="navbar__toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+
+    <nav class="navbar__nav" aria-label="Principal">
+      <a href="index.html" class="navbar__link" data-nav="home" aria-current="page">Inicio</a>
+      <a href="nosotros.html" class="navbar__link" data-nav="nosotros">Nosotros</a>
+      <a href="#proyectos" class="navbar__link" data-nav="proyectos">Proyectos</a>
+      <a href="servicios.html" class="navbar__link" data-nav="servicios">Servicios</a>
+    </nav>
+
+    <a href="contacto.html" class="btn btn--primary btn--cta-nav navbar__cta">Cotizar Ahora</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero section" aria-labelledby="hero-title">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 id="hero-title" class="hero__title">Soluciones Integrales en Diseño, Construcción y Arquitectura</h1>
+        <p class="hero__lead">Ejecutamos proyectos de ingeniería y construcción con precisión industrial y excelencia corporativa. Especialistas en habilitación de espacios y mantención integral para el sector privado y público.</p>
+        <div class="hero__actions">
+          <a href="contacto.html" class="btn btn--primary btn--lg">Iniciar Proyecto</a>
+          <a href="#proyectos" class="btn btn--outline btn--lg">Ver Portafolio</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <img class="hero__media" src="assets/images/image-import-30.png" alt="Ingeniero en sitio de construcción revisando planos con casco blanco">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Welcome / About ===== -->
+  <section class="welcome section" aria-labelledby="welcome-title">
+    <div class="container welcome__grid">
+      <div class="welcome__content">
+        <span class="badge">Nosotros</span>
+        <h2 id="welcome-title" class="welcome__title">Bienvenido a CESCOM</h2>
+        <p class="welcome__lead">Con más de una década de experiencia, CESCOM se ha posicionado como un líder confiable en la ejecución de proyectos de infraestructura. Nuestro compromiso es la entrega impecable, cumpliendo con los más altos estándares de calidad y seguridad industrial.</p>
+        <ul class="feature-list">
+          <li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Gestión Integral de Proyectos (Llave en mano)</span>
+          </li>
+          <li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Cumplimiento estricto de plazos y normativas</span>
+          </li>
+          <li>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Equipo multidisciplinario altamente calificado</span>
+          </li>
+        </ul>
+        <a href="nosotros.html" class="link-arrow">Saber más
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+
+      <div class="welcome__media">
+        <img src="assets/images/image-import-21.png" alt="Trabajo de habilitación de oficinas en ejecución">
+        <img src="assets/images/image-import-32.png" alt="Equipo de CESCOM coordinando un proyecto">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="services section" aria-labelledby="services-title">
+    <div class="container">
+      <header class="services__head">
+        <span class="eyebrow">Nuestras Soluciones</span>
+        <h2 id="services-title" class="services__title">Proveemos Servicios Integrales</h2>
+        <hr class="divider-bar" aria-hidden="true">
+      </header>
+
+      <div class="services__grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12l-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9"></path><path d="M17.64 15L22 10.64"></path><path d="M20.91 11.7l-1.25-1.25a2 2 0 0 1 0-2.83l2.12-2.12-3-3-2.12 2.12a2 2 0 0 1-2.83 0L12.58 3.36"></path></svg>
+          </span>
+          <h3 class="card__title">Obras Civiles Menores</h3>
+          <p class="card__desc">Ejecución precisa de estructuras de hormigón, albañilería, radieres y pavimentos con riguroso control de calidad.</p>
+          <a href="servicios.html" class="link-arrow">Saber más
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+
+        <!-- Card 2 - Featured -->
+        <article class="card card--featured">
+          <span class="badge--corner">MÁS SOLICITADO</span>
+          <span class="card__icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          </span>
+          <h3 class="card__title">Habilitación de Espacios</h3>
+          <p class="card__desc">Transformación integral de oficinas y locales comerciales. Tabiquería, cielos falsos, pisos técnicos y terminaciones de alto estándar.</p>
+          <a href="contacto.html" class="btn btn--primary btn--block">Cotizar Servicio</a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+          </span>
+          <h3 class="card__title">Instalaciones sanitarias y gasfitería general</h3>
+          <p class="card__desc">Soluciones en redes de agua, alcantarillado, baños, cocinas y reparaciones generales, ejecutadas por personal calificado.</p>
+          <a href="servicios.html" class="link-arrow">Saber más
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Latest Projects ===== -->
+  <section class="projects section" id="proyectos" aria-labelledby="projects-title">
+    <div class="container">
+      <header class="projects__head">
+        <div>
+          <span class="eyebrow">Portafolio</span>
+          <h2 id="projects-title" class="projects__title">Últimos Proyectos</h2>
+        </div>
+        <a href="#" class="link-arrow link-arrow--muted">Ver todos
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </header>
+
+      <div class="projects__grid">
+        <article class="project-card">
+          <img class="project-card__img" src="assets/images/image-import-34.png" alt="Interior de oficina moderna habilitada">
+          <div class="project-card__info">
+            <h3>Habilitación Oficinas Centrales</h3>
+            <p>Remodelación completa de 1200m² con estándares corporativos.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img class="project-card__img" src="assets/images/image-import-22.png" alt="Estructura industrial en construcción">
+          <div class="project-card__info">
+            <h3>Galpón Industrial Logístico</h3>
+            <p>Obra civil y estructuras metálicas para centro de distribución.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Final CTA ===== -->
+  <section class="cta-final section" aria-labelledby="cta-title">
+    <div class="container cta-final__inner">
+      <svg class="cta-final__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polyline points="12 8 16 12 12 16"></polyline>
+        <line x1="8" y1="12" x2="16" y2="12"></line>
+      </svg>
+      <h2 id="cta-title" class="cta-final__title">¿Listo para comenzar tu proyecto?</h2>
+      <p class="cta-final__lead">Contáctanos hoy mismo para evaluar tus requerimientos y diseñar una solución a la medida de tu empresa.</p>
+      <a href="contacto.html" class="btn btn--accent">Solicitar una Consulta</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <p class="footer__title">CESCOM<br>Diseño y Construcción</p>
+      <p class="footer__copy">© 2024 Cescom Spa. Excelencia Técnica en Ingeniería.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Enlaces legales">
+      <a href="#" class="footer__link">Política de Privacidad</a>
+      <a href="#" class="footer__link">Términos de Servicio</a>
+      <a href="#" class="footer__link">Política de Cookies</a>
+      <a href="servicios.html" class="footer__link">Servicios</a>
+    </nav>
+  </div>
+  <div class="footer__bottom">
+    <a href="#" class="footer__social" aria-label="Facebook">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.5 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
+    </a>
+    <a href="#" class="footer__social" aria-label="Instagram">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor"></circle></svg>
+    </a>
+    <a href="#" class="footer__social" aria-label="LinkedIn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.3 18.3H5.7V9.7h2.6v8.6Zm-1.3-9.8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm11.3 9.8h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3H10V9.7h2.5v1.2c.4-.7 1.3-1.4 2.6-1.4 2.7 0 3.2 1.8 3.2 4.1v4.7Z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var btn = document.querySelector('.navbar__toggle');
+    var nav = document.querySelector('.navbar__nav');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+    });
+  })();
+</script>
+
+</body>
+</html>

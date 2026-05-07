@@ -1,0 +1,29 @@
+<!--
+  Reusable Navbar component.
+  Each page sets aria-current="page" on its corresponding link.
+  data-active attribute on .navbar can be set to: home | nosotros | proyectos | servicios
+-->
+<header class="navbar" data-active="home">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__brand" aria-label="CESCOM - Inicio">
+      <img src="assets/images/image-import-100.png" alt="CESCOM" class="navbar__logo" width="152" height="51">
+    </a>
+
+    <button class="navbar__toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+
+    <nav class="navbar__nav" aria-label="Principal">
+      <a href="index.html" class="navbar__link" data-nav="home">Inicio</a>
+      <a href="nosotros.html" class="navbar__link" data-nav="nosotros">Nosotros</a>
+      <a href="#proyectos" class="navbar__link" data-nav="proyectos">Proyectos</a>
+      <a href="servicios.html" class="navbar__link" data-nav="servicios">Servicios</a>
+    </nav>
+
+    <a href="contacto.html" class="btn btn--primary btn--cta-nav navbar__cta">Cotizar Ahora</a>
+  </div>
+</header>
