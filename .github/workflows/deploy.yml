@@ -14,7 +14,7 @@ jobs:
           host: cescom.cl
           username: cescomc1
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
+          port: 9022
           script: |
             cd /home/cescomc1/repositories/cescom-website
             git pull origin main
