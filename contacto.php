@@ -105,6 +105,30 @@ try {
     $mail->AltBody = "Nombre: $nombre\nCorreo: $email\nTeléfono: $tel\nServicio: $servicio\nMensaje: $mensaje";
 
     $mail->send();
+
+    // Confirmación al cliente
+    $mail->clearAddresses();
+    $mail->clearReplyTos();
+    $mail->addAddress($email, $nombre);
+    $mail->addReplyTo(MAIL_TO, 'Cescom Spa');
+    $mail->Subject = 'Recibimos tu mensaje — Cescom Spa';
+    $mail->Body    = '
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="utf-8"><title>Confirmación</title></head>
+<body style="font-family:Arial,sans-serif;color:#191c1d;max-width:600px;margin:0 auto;padding:24px">
+  <h2 style="color:#006192;border-bottom:2px solid #006192;padding-bottom:8px">¡Gracias por contactarnos!</h2>
+  <p>Hola <strong>' . $nombre . '</strong>, hemos recibido tu mensaje correctamente.</p>
+  <p>Nuestro equipo lo revisará y se pondrá en contacto contigo a la brevedad.</p>
+  <hr style="border:none;border-top:1px solid #e1e3e4;margin:24px 0">
+  <p style="color:#40484f;font-size:14px">Si tienes alguna consulta urgente puedes escribirnos directamente a <a href="mailto:info@cescom.cl" style="color:#006192">info@cescom.cl</a> o por WhatsApp al <a href="https://wa.me/56940430949" style="color:#006192">+56 9 4043 0949</a>.</p>
+  <p style="color:#94a3b8;font-size:12px;margin-top:32px">Cescom Spa — Ingeniería y Construcción</p>
+</body>
+</html>
+';
+    $mail->AltBody = "Hola $nombre, hemos recibido tu mensaje. Nuestro equipo se pondrá en contacto contigo a la brevedad.\n\nCescom Spa — info@cescom.cl";
+    $mail->send();
+
     echo json_encode(['ok' => true]);
 
 } catch (Exception $e) {
