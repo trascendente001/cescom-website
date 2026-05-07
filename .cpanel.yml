@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/CPANEL_USERNAME/public_html/
+    - export DEPLOYPATH=/home/cescomc1/public_html/
     - /bin/cp -R . $DEPLOYPATH
