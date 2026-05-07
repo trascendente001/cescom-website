@@ -1,0 +1,21 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: cescom.cl
+          username: cescomc1
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /home/cescomc1/repositories/cescom-website
+            git pull origin main
+            /bin/cp -R . /home/cescomc1/public_html/
