@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/cescomc1/public_html/
-    - /bin/cp -R . $DEPLOYPATH
+    - rsync -av --exclude='.git' --exclude='.github' /home/cescomc1/repositories/cescom-website/ $DEPLOYPATH

@@ -18,4 +18,4 @@ jobs:
           script: |
             cd /home/cescomc1/repositories/cescom-website
             git pull origin main
-            /bin/cp -R . /home/cescomc1/public_html/
+            rsync -av --exclude='.git' --exclude='.github' /home/cescomc1/repositories/cescom-website/ /home/cescomc1/public_html/
